@@ -1,15 +1,12 @@
-import React from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Game from "./pages/Game";
+import React from 'react';
+import Game from './components/Game';
 
-const App: React.FC = () => {
+function App() {
   return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<Game />} />
-      </Routes>
-    </Router>
+    <div className="min-h-screen bg-gray-900">
+      <Game />
+    </div>
   );
-};
+}
 
 export default App;
